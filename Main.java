@@ -25,13 +25,18 @@
 
 public class Main {
     public static void main(String[] args) {
-        Student[] students = new Student[] {
-            new Student("Morgan", "Freeman"),
-            new Student("Brad", "Pitt"),
-            new Student("Kevin", "Spacey"),
-        };
-        for (Student s : students) {
-            s.printFullName();
+        // Student[] students = new Student[] {
+        //     new Student("Morgan", "Freeman"),
+        //     new Student("Brad", "Pitt"),
+        //     new Student("Kevin", "Spacey"),
+        // };
+        // for (Student s : students) {
+        //     s.printFullName();
+        // }
+        Point p = new Point(32, 32);
+        for (int i = 0; i < 5; i++) {
+            p.scale();
+            p.print();
         }
     }
 }
