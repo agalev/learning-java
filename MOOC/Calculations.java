@@ -11,6 +11,7 @@ public class Calculations {
         System.out.println(first + " - " + second + " = " + (first - second));
         System.out.println(first + " * " + second + " = " + (first * second));
         System.out.println(first + " / " + second + " = " + ((double) first / second));
+        System.out.println(first + " / " + second + " = " + ((double) first / second));
         scanner.close();
     }
 }
