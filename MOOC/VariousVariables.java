@@ -1,19 +1,15 @@
+import java.util.Scanner;
+
 public class VariousVariables {
     public static void main(String[] args) {
-        int number = 3;
-        double decimal = 5.5;
-        String string = "None!";
-
-        System.out.println("Chicken:");
-        System.out.println(number);
-        System.out.println("Bacon (kg):");
-        System.out.println(decimal);
-        System.out.println("Tractor:");
-        System.out.println(string);
-        System.out.println();
-        System.out.println("And finally, a summary:");
-        System.out.println(number);
-        System.out.println(decimal);
-        System.out.println(string);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Write a number:");
+        int inputInt = Integer.valueOf(scanner.nextLine());
+        System.out.println("You wrote the number " + inputInt);
+        System.out.println("Write a decimal number:");
+        double inputDouble = Double.valueOf(scanner.nextLine());
+        System.out.println("You wrote the decimal number " + inputDouble);
+        System.out.println("The sum of these two is " + (inputInt + inputDouble));
+        scanner.close();
     }
 }
