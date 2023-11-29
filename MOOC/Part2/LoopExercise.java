@@ -23,7 +23,7 @@ public class LoopExercise {
                 numbers++;
             }
         }
-        System.out.println("Thxbai");
+        System.out.println("Thxbai!");
         System.out.println("Sum: " + sum);
         System.out.println("Numbers: " + numbers);
         System.out.println("Average: " + (double) sum/numbers);
