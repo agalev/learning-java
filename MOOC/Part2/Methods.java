@@ -56,6 +56,12 @@ public class Methods {
     public static void sum(int first, int second) {
         System.out.println("The sum of " + first + " and " + second + " is " + (first + second));
     }
+    public static void subtraction(int first, int second) {
+        System.out.println(first + " - " + second + " = " + (first - second));
+    }
+    public static void multiplication(int first, int second) {
+        System.out.println(first + " * " + second + " = " + (first * second));
+    }
     public static void division(int numerator, int denominator) {
         System.out.println(numerator + " / " + denominator + " = " + (double) numerator/denominator);
     }
