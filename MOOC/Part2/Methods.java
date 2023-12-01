@@ -73,5 +73,12 @@ public class Methods {
             }
             i++;
         }
+    public static void printStars(int amount) {
+        int i = 0;
+        while (i < amount) {
+            System.out.print("*");
+            i++;
+        }
+        System.out.println();
     }
 }
