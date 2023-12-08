@@ -80,6 +80,5 @@ public class Methods {
             i++;
         }
         System.out.println();
-        System.out.println();
     }
 }
