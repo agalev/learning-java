@@ -9,6 +9,7 @@ public class ForLoop {
         int upTo = Integer.valueOf(scanner.nextLine());
         for (int i = startWith; i <= upTo; i++) {
             sum+=i;
+            System.out.println("Sum is now: " + sum);
         }
         System.out.println(sum);
         scanner.close();
