@@ -1,7 +1,13 @@
+import java.util.Scanner;
+
 public class AdvancedAstrology {
  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("We are printing a Christmas tree! How tall should it be? (int)");
+
     // printLeaningTriangle(4);
-    christmasTree(12);
+    christmasTree(Integer.valueOf(scanner.nextLine()));
+    scanner.close();
  }
 public static void printStars(int number) {
     for (int i = 0; i < number; i++) {
