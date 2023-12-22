@@ -12,10 +12,13 @@ public class ArraysPractice {
             array[i] = Integer.valueOf(scanner.nextLine());
         }
         System.out.println("Here is the completed array ~");
-        printArray(array);
-        System.out.println("Search for?");
-        int element = Integer.valueOf(scanner.nextLine());
-        findNumber(array, element);
+        printNeatly(array);
+        System.out.println("Sum of the array: " + sumOfNumbersInArray(array));
+        System.out.println("Print array in stars:");
+        printArrayInStars(array);
+        // System.out.println("Search for?");
+        // int element = Integer.valueOf(scanner.nextLine());
+        // findNumber(array, element);
         // System.out.println("Let's swap 2 indices!");
         // swap2indices(array, Integer.valueOf(scanner.nextLine()), Integer.valueOf(scanner.nextLine()));
         // printArray(array);
@@ -45,5 +48,29 @@ public class ArraysPractice {
             if (!found) {
                 System.out.println(number + " was not found.");
             }
+    }
+    public static int sumOfNumbersInArray(int[] array) {
+        int sum = 0;
+        for (int element:array) {
+            sum += element;
+        }
+        return sum;
+    }
+    public static void printNeatly(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (i == array.length - 1) {
+                System.out.println(array[i]);
+            } else {
+                System.out.print(array[i] + ", ");
+            }
+        }
+    }
+    public static void printArrayInStars(int[] array) {
+        for (int element:array) {
+            for (int star = 0; star < element; star++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
