@@ -4,19 +4,31 @@ import java.util.Scanner;
 public class ArrayListsExplained {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        // ArrayList<String> list_of_strings = new ArrayList<>();
-        // while (true) {
-        //         System.out.println("Enter words to add to list, empty to exit:");
-        //         String word = String.valueOf(scanner.nextLine());
-        //         if (word.isEmpty()) {
-        //                 break;
-        //             } else {
+        ArrayList<String> list_of_strings = new ArrayList<>();
+        while (true) {
+                System.out.println("Enter words to add to list, empty to exit:");
+                String word = String.valueOf(scanner.nextLine());
+                if (word.isEmpty()) {
+                        break;
+                    } else {
                     
-        //                     addStringToArray(list_of_strings, word);
-        //                     System.out.println("Current state of the list is:");
-        //                     System.out.println(list_of_strings);
-        //                 }
-        //             }
+                            addStringToArray(list_of_strings, word);
+                            System.out.println("Current state of the list is:");
+                            System.out.println(list_of_strings);
+                        }
+                    }
+                    System.out.println("removing last...1");
+                    removeLastString(list_of_strings);
+                    System.out.println(list_of_strings);
+                    System.out.println("removing last...2");
+                    removeLastString(list_of_strings);
+                    System.out.println(list_of_strings);
+                    System.out.println("removing last...3");
+                    removeLastString(list_of_strings);
+                    System.out.println(list_of_strings);
+                    System.out.println("removing last...4");
+                    removeLastString(list_of_strings);
+                    System.out.println(list_of_strings);
         //             System.out.println("Search for?");
         //             String input = scanner.nextLine();
         //             if (findWordMatch(list_of_strings, input)) {
@@ -39,22 +51,22 @@ public class ArrayListsExplained {
                     //             System.out.println(list_of_strings.get(i));
                     //         }
                         
-        ArrayList<Integer> list_of_integers = new ArrayList<>();
-        while (true) {
-            System.out.println("Enter numbers to add to the array list, -1 to exit:");
-            int input = Integer.valueOf(scanner.nextLine());
-            if (input == -1) {
-                break;
-            } else {
-                list_of_integers.add(input);
-                System.out.println("Current state of the list is:");
-                System.out.println(list_of_integers);
-            }
-        }
-        System.out.println("The numbers in the range [0, 5]");
-        printNumbersInRange(list_of_integers, 0, 5);
-        System.out.println("The numbers in the range [3, 10]");
-        printNumbersInRange(list_of_integers, 3, 10);
+        // ArrayList<Integer> list_of_integers = new ArrayList<>();
+        // while (true) {
+        //     System.out.println("Enter numbers to add to the array list, -1 to exit:");
+        //     int input = Integer.valueOf(scanner.nextLine());
+        //     if (input == -1) {
+        //         break;
+        //     } else {
+        //         list_of_integers.add(input);
+        //         System.out.println("Current state of the list is:");
+        //         System.out.println(list_of_integers);
+        //     }
+        // }
+        // System.out.println("The numbers in the range [0, 5]");
+        // printNumbersInRange(list_of_integers, 0, 5);
+        // System.out.println("The numbers in the range [3, 10]");
+        // printNumbersInRange(list_of_integers, 3, 10);
         // indexOfSmallest(list_of_integers);
         // System.out.println(sumList(list_of_integers));
         // System.out.println(avgList(list_of_integers));
@@ -129,5 +141,11 @@ public class ArrayListsExplained {
                 System.out.println(number);
             }
         }
+    }
+    public static void removeLastString(ArrayList<String> list) {
+        if (list.size() == 0) {
+            return;
+        }
+        list.remove(list.size() -1);
     }
 }

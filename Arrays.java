@@ -1,4 +1,4 @@
-public class Arrays {
+public class Arrays_Practice {
   public static void main(String[] args) {
     int[] arr;
     arr = new int[10];
