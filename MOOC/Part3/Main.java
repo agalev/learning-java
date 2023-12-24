@@ -8,7 +8,9 @@ public class Main {
         // Jamey.printDetails();
         // Whistle ravenWhistle = new Whistle("Kvaak");
         // ravenWhistle.sound();
-        Door wooden = new Door();
-        wooden.knock();
+        // Door wooden = new Door();
+        // wooden.knock();
+        Product banana = new Product("Banana", 1.1, 13);
+        banana.printProduct();
     }
 }
