@@ -6,7 +6,9 @@ public class Main {
         // Jamey.printDetails();
         // Jamey.deposit(40.5);
         // Jamey.printDetails();
-        Whistle ravenWhistle = new Whistle("Kvaak");
-        ravenWhistle.sound();
+        // Whistle ravenWhistle = new Whistle("Kvaak");
+        // ravenWhistle.sound();
+        Door wooden = new Door();
+        wooden.knock();
     }
 }
