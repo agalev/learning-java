@@ -10,7 +10,23 @@ public class Main {
         // ravenWhistle.sound();
         // Door wooden = new Door();
         // wooden.knock();
-        Product banana = new Product("Banana", 1.1, 13);
-        banana.printProduct();
+        // Product banana = new Product("Banana", 1.1, 13);
+        // banana.printProduct();
+        DecreasingCounter counter = new DecreasingCounter(5);
+        counter.printValue();
+
+        counter.decrement();
+        counter.printValue();
+
+        counter.decrement();
+        counter.printValue();
+
+        counter.reset();
+        counter.printValue();
+
+        counter.decrement();
+        counter.printValue();
+
+        
     }
 }
