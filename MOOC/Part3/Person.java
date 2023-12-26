@@ -4,8 +4,8 @@ public class Person {
     private int weight;
     private int height;
 
-    public Person(String initialName) {
-        this.age = 0;
+    public Person(String initialName, int age) {
+        this.age = age;
         this.weight = 0;
         this.height = 0;
         this.name = initialName;
