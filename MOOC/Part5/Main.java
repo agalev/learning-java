@@ -24,7 +24,10 @@ public class Main {
         //     }
         // }
 
-        Book harryBook = new Book("J.K. Rowling", "Harry Potter and the Sorcerer's Stone", 223);
-        System.out.println(harryBook);
+        // Book harryBook = new Book("J.K. Rowling", "Harry Potter and the Sorcerer's Stone", 223);
+        // System.out.println(harryBook);
+        Cube salt = new Cube(2);
+        System.out.println(salt.volume());
+        System.out.println(salt);
     }
 }
