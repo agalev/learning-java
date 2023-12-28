@@ -26,8 +26,17 @@ public class Main {
 
         // Book harryBook = new Book("J.K. Rowling", "Harry Potter and the Sorcerer's Stone", 223);
         // System.out.println(harryBook);
-        Cube salt = new Cube(2);
-        System.out.println(salt.volume());
-        System.out.println(salt);
+        // Cube salt = new Cube(2);
+        // System.out.println(salt.volume());
+        // System.out.println(salt);
+        Fitbyte assistant = new Fitbyte(30, 60);
+
+        double percentage = 0.5;
+
+        while (percentage < 1.0) {
+            double target = assistant.targetHeartRate(percentage);
+            System.out.println("Target " + (percentage * 100) + "% of maximum: " + target);
+            percentage = percentage + 0.1;
+        }
     }
 }
