@@ -20,7 +20,7 @@ public class Main {
             try {
                 Thread.sleep(10);
             } catch(Exception e) {
-                Thread.currentThread().interrupt();
+                // Thread.currentThread().interrupt();
             }
         }
     }
