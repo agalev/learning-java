@@ -45,5 +45,20 @@ public class Main {
         // System.out.println(tapeMeasure);
         // System.out.println(plaster);
         // System.out.println(tyre);
+        // Counter counter = new Counter();
+        // System.out.println(counter.value());
+
+        // counter.increaseValue();
+        // System.out.println(counter.value());
+
+        // counter.increaseValue(3);
+        // System.out.println(counter.value());
+
+        // counter.decreaseValue(2);
+        // System.out.println(counter.value());
+
+        // counter.decreaseValue();
+        // System.out.println(counter.value());
+
     }
 }
