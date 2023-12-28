@@ -29,14 +29,21 @@ public class Main {
         // Cube salt = new Cube(2);
         // System.out.println(salt.volume());
         // System.out.println(salt);
-        Fitbyte assistant = new Fitbyte(30, 60);
+        // Fitbyte assistant = new Fitbyte(30, 60);
 
-        double percentage = 0.5;
+        // double percentage = 0.5;
 
-        while (percentage < 1.0) {
-            double target = assistant.targetHeartRate(percentage);
-            System.out.println("Target " + (percentage * 100) + "% of maximum: " + target);
-            percentage = percentage + 0.1;
-        }
+        // while (percentage < 1.0) {
+        //     double target = assistant.targetHeartRate(percentage);
+        //     System.out.println("Target " + (percentage * 100) + "% of maximum: " + target);
+        //     percentage = percentage + 0.1;
+        // }
+        // Product tapeMeasure = new Product("Tape measure");
+        // Product plaster = new Product("Plaster", "home improvement section");
+        // Product tyre = new Product("Tyre", 5);
+
+        // System.out.println(tapeMeasure);
+        // System.out.println(plaster);
+        // System.out.println(tyre);
     }
 }
