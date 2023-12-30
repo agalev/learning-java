@@ -89,24 +89,37 @@ public class Main {
         // wasSuccessful = petesCard.takeMoney(4);
         // System.out.println("successfully withdrew: " + wasSuccessful);
         // System.out.println("money " + petesCard.balance());
-        PaymentTerminal unicafeExactum = new PaymentTerminal();
-        System.out.println(unicafeExactum);
+        // PaymentTerminal unicafeExactum = new PaymentTerminal();
+        // System.out.println(unicafeExactum);
 
-        PaymentCard annesCard = new PaymentCard(2);
+        // PaymentCard annesCard = new PaymentCard(2);
 
-        System.out.println("amount of money on the card is " + annesCard.balance() + " euros");
+        // System.out.println("amount of money on the card is " + annesCard.balance() + " euros");
 
-        boolean wasSuccessful = unicafeExactum.eatHeartily(annesCard);
-        System.out.println("there was enough money: " + wasSuccessful);
+        // boolean wasSuccessful = unicafeExactum.eatHeartily(annesCard);
+        // System.out.println("there was enough money: " + wasSuccessful);
 
-        unicafeExactum.addMoneyToCard(annesCard, 100);
+        // unicafeExactum.addMoneyToCard(annesCard, 100);
 
-        wasSuccessful = unicafeExactum.eatHeartily(annesCard);
-        System.out.println("there was enough money: " + wasSuccessful);
+        // wasSuccessful = unicafeExactum.eatHeartily(annesCard);
+        // System.out.println("there was enough money: " + wasSuccessful);
 
-        System.out.println("amount of money on the card is " + annesCard.balance() + " euros");
+        // System.out.println("amount of money on the card is " + annesCard.balance() + " euros");
 
-        System.out.println(unicafeExactum);
- 
+        // System.out.println(unicafeExactum);
+
+        Apartment manhattanStudioApt = new Apartment(1, 16, 5500);
+        Apartment atlantaTwoBedroomApt = new Apartment(2, 38, 4200);
+        Apartment bangorThreeBedroomApt = new Apartment(3, 78, 2500);
+
+        System.out.println(manhattanStudioApt.largerThan(atlantaTwoBedroomApt));       // false
+        System.out.println(bangorThreeBedroomApt.largerThan(atlantaTwoBedroomApt));  // true
+
+        System.out.println(manhattanStudioApt.priceDifference(atlantaTwoBedroomApt));  //71600
+        System.out.println(bangorThreeBedroomApt.priceDifference(atlantaTwoBedroomApt));   //35400
+
+        System.out.println(manhattanStudioApt.moreExpensiveThan(atlantaTwoBedroomApt));  // false
+        System.out.println(bangorThreeBedroomApt.moreExpensiveThan(atlantaTwoBedroomApt));   // true
+
     }
 }
