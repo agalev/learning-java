@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Clock clock = new Clock();
@@ -108,18 +111,38 @@ public class Main {
 
         // System.out.println(unicafeExactum);
 
-        Apartment manhattanStudioApt = new Apartment(1, 16, 5500);
-        Apartment atlantaTwoBedroomApt = new Apartment(2, 38, 4200);
-        Apartment bangorThreeBedroomApt = new Apartment(3, 78, 2500);
+        // Apartment manhattanStudioApt = new Apartment(1, 16, 5500);
+        // Apartment atlantaTwoBedroomApt = new Apartment(2, 38, 4200);
+        // Apartment bangorThreeBedroomApt = new Apartment(3, 78, 2500);
 
-        System.out.println(manhattanStudioApt.largerThan(atlantaTwoBedroomApt));       // false
-        System.out.println(bangorThreeBedroomApt.largerThan(atlantaTwoBedroomApt));  // true
+        // System.out.println(manhattanStudioApt.largerThan(atlantaTwoBedroomApt));       // false
+        // System.out.println(bangorThreeBedroomApt.largerThan(atlantaTwoBedroomApt));  // true
 
-        System.out.println(manhattanStudioApt.priceDifference(atlantaTwoBedroomApt));  //71600
-        System.out.println(bangorThreeBedroomApt.priceDifference(atlantaTwoBedroomApt));   //35400
+        // System.out.println(manhattanStudioApt.priceDifference(atlantaTwoBedroomApt));  //71600
+        // System.out.println(bangorThreeBedroomApt.priceDifference(atlantaTwoBedroomApt));   //35400
 
-        System.out.println(manhattanStudioApt.moreExpensiveThan(atlantaTwoBedroomApt));  // false
-        System.out.println(bangorThreeBedroomApt.moreExpensiveThan(atlantaTwoBedroomApt));   // true
+        // System.out.println(manhattanStudioApt.moreExpensiveThan(atlantaTwoBedroomApt));  // false
+        // System.out.println(bangorThreeBedroomApt.moreExpensiveThan(atlantaTwoBedroomApt));   // true
 
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Book> books = new ArrayList<>();
+        System.out.println("Enter book title + year of publication to add to books list:");
+        while (true) {
+            System.out.println("Title (empty will stop):");
+            String bookTitle = scanner.nextLine();
+            if (bookTitle.equals("")) {
+                break;
+            }
+            System.out.println("Publication year:");
+            int bookYear = Integer.valueOf(scanner.nextLine());
+            Book bookToAdd = new Book(bookTitle, bookYear);
+            if (books.contains(bookToAdd)) {
+                System.out.println("The book is already on the list. Let's not add the same book again.");
+            } else {
+                books.add(bookToAdd);
+            }
+        }
+        System.out.println("Thank you! Books added: " + books.size());
+        scanner.close();
     }
 }
