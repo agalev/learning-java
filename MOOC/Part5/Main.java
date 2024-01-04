@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+// import java.util.ArrayList;
+// import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -124,25 +124,63 @@ public class Main {
         // System.out.println(manhattanStudioApt.moreExpensiveThan(atlantaTwoBedroomApt));  // false
         // System.out.println(bangorThreeBedroomApt.moreExpensiveThan(atlantaTwoBedroomApt));   // true
 
-        Scanner scanner = new Scanner(System.in);
-        ArrayList<Book> books = new ArrayList<>();
-        System.out.println("Enter book title + year of publication to add to books list:");
-        while (true) {
-            System.out.println("Title (empty will stop):");
-            String bookTitle = scanner.nextLine();
-            if (bookTitle.equals("")) {
-                break;
-            }
-            System.out.println("Publication year:");
-            int bookYear = Integer.valueOf(scanner.nextLine());
-            Book bookToAdd = new Book(bookTitle, bookYear);
-            if (books.contains(bookToAdd)) {
-                System.out.println("The book is already on the list. Let's not add the same book again.");
-            } else {
-                books.add(bookToAdd);
-            }
+        // Scanner scanner = new Scanner(System.in);
+        // ArrayList<Book> books = new ArrayList<>();
+        // System.out.println("Enter book title + year of publication to add to books list:");
+        // while (true) {
+        //     System.out.println("Title (empty will stop):");
+        //     String bookTitle = scanner.nextLine();
+        //     if (bookTitle.equals("")) {
+        //         break;
+        //     }
+        //     System.out.println("Publication year:");
+        //     int bookYear = Integer.valueOf(scanner.nextLine());
+        //     Book bookToAdd = new Book(bookTitle, bookYear);
+        //     if (books.contains(bookToAdd)) {
+        //         System.out.println("The book is already on the list. Let's not add the same book again.");
+        //     } else {
+        //         books.add(bookToAdd);
+        //     }
+        // }
+        // System.out.println("Thank you! Books added: " + books.size());
+        // scanner.close();
+        // Money a = new Money(10,10);
+        // Money b = new Money(5,0);
+
+        // Money c = a.plus(b);
+
+        // System.out.println(a);  // 10.00e
+        // System.out.println(b);  // 5.00e
+        // System.out.println(c);  // 15.00e
+
+        // a = a.plus(c);          // NB: a new Money object is created, and is placed "at the end of the strand connected to a"
+        // //  the old 10 euros at the end of the strand disappears and the Java garbage collector takes care of it
+
+        // System.out.println(a);  // 25.00e
+        // System.out.println(b);  // 5.00e
+        // System.out.println(c);  // 15.00e
+
+        // Money a = new Money(10, 0);
+        // Money b = new Money(3, 0);
+        // Money c = new Money(5, 0);
+
+        // System.out.println(a.lessThan(b));  // false
+        // System.out.println(b.lessThan(c));  // true
+        Money a = new Money(10, 0);
+        Money b = new Money(3, 50);
+
+        Money c = a.minus(b);
+
+        System.out.println(a);  // 10.00e
+        System.out.println(b);  // 3.50e
+        System.out.println(c);  // 6.50e
+
+        c = c.minus(a);       // NB: a new Money object is created, and is placed "at the end of the strand connected to c"
+        //  the old 6.5 euros at the end of the strand disappears and the Java garbage collector takes care of it
+
+
+        System.out.println(a);  // 10.00e
+        System.out.println(b);  // 3.50e
+        System.out.println(c);  // 0.00e
         }
-        System.out.println("Thank you! Books added: " + books.size());
-        scanner.close();
-    }
 }
