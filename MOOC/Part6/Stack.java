@@ -18,6 +18,10 @@ public class Stack {
         this.valuesList.add(value);
     }
 
+    public String take() {
+        return this.valuesList.remove(this.valuesList.size() - 1);
+    }
+
     public ArrayList<String> values() {
         return this.valuesList;
     }
