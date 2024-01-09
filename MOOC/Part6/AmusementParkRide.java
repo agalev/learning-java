@@ -23,6 +23,33 @@ public class AmusementParkRide {
         return true;
     }
 
+    public Person getTallest() {
+        if (this.riding.isEmpty()) {
+            return null;
+        }
+        // create an object reference for the object to be returned
+        // its first value is the first object on the list
+        Person returnObject = this.riding.get(0);
+
+        // go through the list
+        for (Person prs: this.riding) {
+            // compare each object on the list
+            // to the returnObject -- we compare heights
+            // since we're searching for the tallest,
+
+            if (returnObject.getHeight() < prs.getHeight()) {
+                // if we find a taller person in the comparison,
+                // we assign it as the value of the returnObject
+                returnObject = prs;
+            }
+        }
+
+        // finally, the object reference describing the
+        // return object is returned
+        return returnObject;
+
+    }
+
     public String toString() {
         String printOutput = this.name + ", minimum height requirement: " + this.minimumHeight +
             ", visitors: " + this.visitors + "\n";

@@ -70,11 +70,41 @@ public class Main {
 
         // System.out.println(hurjakuru);
 
-        Gift book = new Gift("Harry Potter and the Philosopher's Stone", 2);
+        // Gift book = new Gift("Harry Potter and the Philosopher's Stone", 2);
 
-        System.out.println("Gift's name: " + book.getName());
-        System.out.println("Gift's weight: " + book.getWeight());
+        // System.out.println("Gift's name: " + book.getName());
+        // System.out.println("Gift's weight: " + book.getWeight());
 
-        System.out.println("Gift: " + book);
+        // System.out.println("Gift: " + book);
+
+        // Gift book = new Gift("Harry Potter and the Philosopher's Stone", 2);
+
+        // Package gifts = new Package();
+        // gifts.addGift(book);
+        // gifts.addGift(book);
+        // System.out.println(gifts.totalWeight());
+
+        Person matti = new Person("Matti");
+        matti.setHeight(180);
+
+        Person juhana = new Person("Juhana");
+        juhana.setHeight(132);
+
+        Person awak = new Person("Awak");
+        awak.setHeight(194);
+
+        AmusementParkRide hurjakuru = new AmusementParkRide("Hurjakuru", 140);
+
+        hurjakuru.isAllowedOn(matti);
+        hurjakuru.isAllowedOn(juhana);
+        hurjakuru.isAllowedOn(awak);
+
+        System.out.println(hurjakuru);
+        // System.out.println(hurjakuru.averageHeightOfPeopleOnRide());
+
+        System.out.println();
+        System.out.println(hurjakuru.getTallest().getName());
+        Person tallest = hurjakuru.getTallest();
+        System.out.println(tallest.getName());
     }
 }
