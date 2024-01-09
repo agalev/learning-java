@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class AmusementParkRide {
     private String name;
     private int minimumHeight;
@@ -22,7 +24,21 @@ public class AmusementParkRide {
     }
 
     public String toString() {
-        return this.name + ", minimum height requirement: " + this.minimumHeight +
-            ", visitors: " + this.visitors;
+        String printOutput = this.name + ", minimum height requirement: " + this.minimumHeight +
+            ", visitors: " + this.visitors + "\n";
+
+        if (riding.isEmpty()) {
+            return printOutput + "no one is on the ride.";
+        }
+
+        // we form a string from the people on the list
+        String peopleOnRide = "";
+
+        for (Person person: riding) {
+            peopleOnRide = peopleOnRide + person.getName() + "\n";
+        }
+
+        return printOutput + "\n" +
+            "on the ride:\n" + peopleOnRide;
     }
 }
