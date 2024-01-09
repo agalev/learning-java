@@ -9,6 +9,13 @@ public class Person {
         this(name, 0, 0, 0);
     }
 
+    public Person(String name, int height) {
+        this.name = name;
+        this.height = height;
+        this.age = 0;
+        this.weight = 0;
+    }
+
     public Person(String name, int age, int height, int weight) {
         this.name = name;
         this.age = age;
@@ -73,6 +80,6 @@ public class Person {
 
     @Override
     public String toString() {
-        return this.name + ", age " + this.age + " years";
+        return this.name + " (" + this.height + " cm)";
     }
 }

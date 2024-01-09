@@ -84,27 +84,120 @@ public class Main {
         // gifts.addGift(book);
         // System.out.println(gifts.totalWeight());
 
-        Person matti = new Person("Matti");
-        matti.setHeight(180);
+        // Person matti = new Person("Matti");
+        // matti.setHeight(180);
 
-        Person juhana = new Person("Juhana");
-        juhana.setHeight(132);
+        // Person juhana = new Person("Juhana");
+        // juhana.setHeight(132);
 
-        Person awak = new Person("Awak");
-        awak.setHeight(194);
+        // Person awak = new Person("Awak");
+        // awak.setHeight(194);
 
-        AmusementParkRide hurjakuru = new AmusementParkRide("Hurjakuru", 140);
+        // AmusementParkRide hurjakuru = new AmusementParkRide("Hurjakuru", 140);
 
-        hurjakuru.isAllowedOn(matti);
-        hurjakuru.isAllowedOn(juhana);
-        hurjakuru.isAllowedOn(awak);
+        // hurjakuru.isAllowedOn(matti);
+        // hurjakuru.isAllowedOn(juhana);
+        // hurjakuru.isAllowedOn(awak);
+    
 
-        System.out.println(hurjakuru);
-        // System.out.println(hurjakuru.averageHeightOfPeopleOnRide());
+        // System.out.println(hurjakuru);
+        // // System.out.println(hurjakuru.averageHeightOfPeopleOnRide());
 
-        System.out.println();
-        System.out.println(hurjakuru.getTallest().getName());
-        Person tallest = hurjakuru.getTallest();
-        System.out.println(tallest.getName());
+        // System.out.println();
+
+        // System.out.println(hurjakuru.getTallest().getName());
+        // Person tallest = hurjakuru.getTallest();
+        // System.out.println(tallest.getName());
+
+        // SimpleCollection s = new SimpleCollection("characters");
+        // System.out.println(s);
+
+        // System.out.println();
+
+        // s.add("magneto");
+        // System.out.println(s);
+
+        // System.out.println();
+
+        // s.add("mystique");
+        // System.out.println(s);
+
+        // System.out.println();
+
+        // s.add("phoenix");
+        // System.out.println(s);
+        // SimpleCollection j = new SimpleCollection("characters");
+        // System.out.println("Longest: " + j.longest());
+
+        // j.add("magneto");
+        // j.add("mystique");
+        // j.add("phoenix");
+
+        // System.out.println("Longest: " + j.longest());
+        // Room room = new Room();
+        // System.out.println("Empty room? " + room.isEmpty());
+        // room.add(new Person("Lea", 183));
+        // room.add(new Person("Kenya", 182));
+        // room.add(new Person("Auli", 186));
+        // room.add(new Person("Nina", 172));
+        // room.add(new Person("Terhi", 185));
+        // System.out.println("Empty room? " + room.isEmpty());
+
+        // System.out.println("");
+        // for (Person person : room.getPersons()) {
+        //     System.out.println(person);
+        // }
+
+        // Room room = new Room();
+        // System.out.println("Shortest: " + room.shortest());
+        // System.out.println("Empty room? " + room.isEmpty());
+        // room.add(new Person("Lea", 183));
+        // room.add(new Person("Kenya", 182));
+        // room.add(new Person("Auli", 186));
+        // room.add(new Person("Nina", 172));
+        // room.add(new Person("Terhi", 185));
+        // System.out.println("Empty room? " + room.isEmpty());
+
+        // System.out.println("");
+        // for (Person person : room.getPersons()) {
+        //     System.out.println(person);
+        // }
+
+        // System.out.println();
+        // System.out.println("Shortest: " + room.shortest());
+        // System.out.println("");
+        // for (Person person : room.getPersons()) {
+        //     System.out.println(person);
+        // }
+
+        // Room room = new Room();
+        // room.add(new Person("Lea", 183));
+        // room.add(new Person("Kenya", 182));
+        // room.add(new Person("Auli", 186));
+        // room.add(new Person("Nina", 172));
+        // room.add(new Person("Terhi", 185));
+
+        // System.out.println("");
+        // for (Person person : room.getPersons()) {
+        //     System.out.println(person);
+        // }
+
+        // System.out.println();
+        // System.out.println("Shortest: " + room.take());
+        // System.out.println("");
+        // for (Person person : room.getPersons()) {
+        //     System.out.println(person);
+        // }
+
+        Room room = new Room();
+        room.add(new Person("Lea", 183));
+        room.add(new Person("Kenya", 182));
+        room.add(new Person("Auli", 186));
+        room.add(new Person("Nina", 172));
+        room.add(new Person("Terhi", 185));
+
+        while (!room.isEmpty()) {
+            System.out.println(room.take());
+        }
     }
 }
