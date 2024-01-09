@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Menu menu = new Menu();
@@ -189,15 +191,65 @@ public class Main {
         //     System.out.println(person);
         // }
 
-        Room room = new Room();
-        room.add(new Person("Lea", 183));
-        room.add(new Person("Kenya", 182));
-        room.add(new Person("Auli", 186));
-        room.add(new Person("Nina", 172));
-        room.add(new Person("Terhi", 185));
+        // Room room = new Room();
+        // room.add(new Person("Lea", 183));
+        // room.add(new Person("Kenya", 182));
+        // room.add(new Person("Auli", 186));
+        // room.add(new Person("Nina", 172));
+        // room.add(new Person("Terhi", 185));
 
-        while (!room.isEmpty()) {
-            System.out.println(room.take());
-        }
+        // while (!room.isEmpty()) {
+        //     System.out.println(room.take());
+        // }
+
+        // Scanner scanner = new Scanner(System.in);
+        // WordSet set = new WordSet();
+
+        // UserInterface userInterface = new UserInterface(set, scanner);
+        // userInterface.start();
+
+        // SimpleDictionary book = new SimpleDictionary();
+        // book.add("one", "yksi");
+        // book.add("two", "kaksi");
+
+        // System.out.println(book.translate("one"));
+        // System.out.println(book.translate("two"));
+        // System.out.println(book.translate("three"));
+
+        // Scanner scanner = new Scanner(System.in);
+        // SimpleDictionary dictionary = new SimpleDictionary();
+
+        // TextUI ui = new TextUI(scanner, dictionary);
+        // ui.start();
+
+        // TodoList list = new TodoList();
+        // list.add("read the course material");
+        // list.add("watch the latest fool us");
+        // list.add("take it easy");
+
+        // list.print();
+        // list.remove(2);
+
+        // System.out.println();
+        // list.print();
+
+        TodoList list = new TodoList();
+        Scanner scanner = new Scanner(System.in);
+
+        UserInterface ui = new UserInterface(list, scanner);
+
+        ui.start();
+        
+        // list.add("read the course material");
+        // list.add("watch the latest fool us");
+        // list.add("take it easy");
+        // list.print();
+        // list.remove(2);
+        // list.print();
+        // list.add("buy raisins");
+        // list.print();
+        // list.remove(1);
+        // list.remove(1);
+        // list.print();
     }
 }
