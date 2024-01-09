@@ -233,12 +233,12 @@ public class Main {
         // System.out.println();
         // list.print();
 
-        TodoList list = new TodoList();
-        Scanner scanner = new Scanner(System.in);
+        // TodoList list = new TodoList();
+        // Scanner scanner = new Scanner(System.in);
 
-        UserInterface ui = new UserInterface(list, scanner);
+        // UserInterface ui = new UserInterface(list, scanner);
 
-        ui.start();
+        // ui.start();
         
         // list.add("read the course material");
         // list.add("watch the latest fool us");
@@ -251,5 +251,18 @@ public class Main {
         // list.remove(1);
         // list.remove(1);
         // list.print();
+
+        GradeRegister register = new GradeRegister();
+        Scanner scanner = new Scanner(System.in);
+
+        UI userInterface = new UI(register, scanner);
+
+        userInterface.start();
+        // register.addGradeBasedOnPoints(93);
+        // register.addGradeBasedOnPoints(91);
+        // register.addGradeBasedOnPoints(92);
+
+        // System.out.println(register.averageOfGrades());
+        // System.out.println(register.averageOfPoints());
     }
 }
