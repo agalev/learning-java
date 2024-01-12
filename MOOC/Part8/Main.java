@@ -27,22 +27,34 @@ public class Main {
         // System.out.println();
 
         // System.out.println(library.getBook("SENSE"));
-        Abbreviations abbreviations = new Abbreviations();
-        abbreviations.addAbbreviation("e.g.", "for example");
-        abbreviations.addAbbreviation("etc.", "and so on");
-        abbreviations.addAbbreviation("i.e.", "more precisely");
+        // Abbreviations abbreviations = new Abbreviations();
+        // abbreviations.addAbbreviation("e.g.", "for example");
+        // abbreviations.addAbbreviation("etc.", "and so on");
+        // abbreviations.addAbbreviation("i.e.", "more precisely");
 
-        String text = "e.g. i.e. etc. lol";
+        // String text = "e.g. i.e. etc. lol";
 
-        for (String part: text.split(" ")) {
-            if(abbreviations.hasAbbreviation(part)) {
-                part = abbreviations.findExplanationFor(part);
-            }
+        // for (String part: text.split(" ")) {
+        //     if(abbreviations.hasAbbreviation(part)) {
+        //         part = abbreviations.findExplanationFor(part);
+        //     }
 
-            System.out.print(part);
-            System.out.print(" ");
-        }
+        //     System.out.print(part);
+        //     System.out.print(" ");
+        // }
 
-        System.out.println();
+        // System.out.println();
+
+        HashMap<String, String> hashmap = new HashMap<>();
+        hashmap.put("f.e", "for example");
+        hashmap.put("etc.", "and so on");
+        hashmap.put("i.e", "more precisely");
+
+        Program program = new Program(hashmap);
+        program.printKeys();
+        System.out.println("---");
+        program.printKeysWhere("i");
+        System.out.println("---");
+        program.printValuesOfKeysWhere(".e");
     }
 }
